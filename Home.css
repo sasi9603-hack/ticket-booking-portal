@@ -1,0 +1,33 @@
+/* Custom styles for MakeTkt Home page */
+
+body {
+  background: linear-gradient(to right, #000000, #000000);
+}
+
+.reel {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+}
+.bookingSlotStyle{
+  border-style:Solid;
+  border-color: black;
+  border-radius:8px;
+}
+.VariousSlots{
+  margin-right:130px
+}
+.InnerText{
+  font-family: italic;
+}
+.ContentBox{
+  border-style: solid;
+  border-radius: 8px;
+  border-color: black;
+  color: white;
+  Height:80vh;
+  width: 99.vw;
+}
+/* Hide all content sections except TrainContent by default */
+#BusContent, #HotelContent, #MovieContent, #FoodContent {
+  display: none;
+}
+/* add any additional selectors below */

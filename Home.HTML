@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="Home.css"/>    
+    </head>
+    <body>
+        <!--navbar-->
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light reel">
+            <a class="navbar-brand navHeadd" href="#" >TicketBookEra – Multi-Service Booking Web Interface</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex flex-row justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link InnerText" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  InnerText" href="#">Help</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link InnerText" href="#">settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link InnerText" href="#">about</a>
+                </li>
+                </ul>
+            </div>
+           
+            </nav>
+        </div>
+        <!--Booking Slots-->
+        <div class="d-flex flex-row justify-content-center bookingSlotStyle">
+            <a class="VariousSlots" id="Train">
+                <img src="https://img.icons8.com/color/96/train.png"/>
+                <p>Train Bookings</p>
+
+            </a>
+            <a class="VariousSlots" id="Bus">
+                <img src="https://img.icons8.com/color/96/bus.png"/>
+                <p>Bus Tickets</p>
+                
+            </a>
+            <a class="VariousSlots" id="Hotel">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj0bT2UI3GRP9QnTpz7dhKXiBpAhn13-YHdQ&s " height="90px" width="90px"/>
+                <p>Hotel Bookings</p>
+                
+            </a>
+            <a class="VariousSlots" id="Movie">
+                <img src="https://img.icons8.com/color/96/movie.png"/>
+                <p>Movie Tickets</p>
+                
+            </a>
+            <a class="VariousSlots" id="Food">
+                <img src="https://img.icons8.com/color/96/food.png"/>
+                <p>Food Service</p>
+                
+            </a>
+        </div>
+        <!--content-->
+        <div class="ContentBox">
+<!--content-->
+
+<div class="ContentBox">
+<!-- Train Booking -->
+<div id="TrainContent" class="container mt-5">
+    <h2>Train Ticket Booking</h2>
+    <form>
+        <div class="mb-3">
+            <label>From</label>
+            <input type="text" class="form-control" placeholder="Enter Departure City">
+        </div>
+
+        <div class="mb-3">
+            <label>To</label>
+            <input type="text" class="form-control" placeholder="Enter Destination City">
+        </div>
+
+        <div class="mb-3">
+            <label>Travel Date</label>
+            <input type="date" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label>Class</label>
+            <select class="form-control">
+                <option>Sleeper</option>
+                <option>AC 3 Tier</option>
+                <option>AC 2 Tier</option>
+                <option>First Class</option>
+            </select>
+        </div>
+
+        <button class="btn btn-primary">Search Trains</button>
+    </form>
+</div>
+
+
+<!-- Bus Booking -->
+<div id="BusContent" class="container mt-5">
+    <h2>Bus Ticket Booking</h2>
+    <form>
+        <div class="mb-3">
+            <label>From</label>
+            <input type="text" class="form-control" placeholder="Departure City">
+        </div>
+
+        <div class="mb-3">
+            <label>To</label>
+            <input type="text" class="form-control" placeholder="Destination City">
+        </div>
+
+        <div class="mb-3">
+            <label>Travel Date</label>
+            <input type="date" class="form-control">
+        </div>
+
+        <button class="btn btn-success">Search Buses</button>
+    </form>
+</div>
+
+
+<!-- Hotel Booking -->
+<div id="HotelContent" class="container mt-5">
+    <h2>Hotel Booking</h2>
+    <form>
+        <div class="mb-3">
+            <label>City</label>
+            <input type="text" class="form-control" placeholder="Enter City">
+        </div>
+
+        <div class="mb-3">
+            <label>Check-In</label>
+            <input type="date" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label>Check-Out</label>
+            <input type="date" class="form-control">
+        </div>
+
+        <button class="btn btn-warning">Find Hotels</button>
+    </form>
+</div>
+
+
+<!-- Movie Tickets -->
+<div id="MovieContent" class="container mt-5">
+    <h2>Movie Ticket Booking</h2>
+    <form>
+        <div class="mb-3">
+            <label>City</label>
+            <input type="text" class="form-control" placeholder="Enter City">
+        </div>
+
+        <div class="mb-3">
+            <label>Select Movie</label>
+            <input type="text" class="form-control" placeholder="Movie Name">
+        </div>
+
+        <div class="mb-3">
+            <label>Date</label>
+            <input type="date" class="form-control">
+        </div>
+
+        <button class="btn btn-danger">Book Tickets</button>
+    </form>
+</div>
+
+
+<!-- Food Service -->
+<div id="FoodContent" class="container mt-5">
+    <h2>Food Order Service</h2>
+    <form>
+        <div class="mb-3 ">
+            <label>Restaurant</label>
+            <input type="text" class="form-control" placeholder="Restaurant Name">
+        </div>
+
+        <div class="mb-3">
+            <label>Food Item</label>
+            <input type="text" class="form-control" placeholder="Enter Food Item">
+        </div>
+
+        <div class="mb-3">
+            <label>Delivery Address</label>
+            <input type="text" class="form-control" placeholder="Enter Address">
+        </div>
+
+        <button class="btn btn-dark">Order Food</button>
+    </form>
+</div>
+</div>
+
+        </div>
+
+
+        <script src="MakeTKTjscript.js"></script>
+    </body>
+</html> 
